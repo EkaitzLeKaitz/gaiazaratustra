@@ -1,0 +1,396 @@
+
+/*Clases generales body*/
+
+
+hr{
+    margin: 1vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+div .contenedor_web{
+    margin: 10vw;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 ,h2{
+    color:rgb(63, 187, 125);
+    margin:3vh;
+}
+h2{
+    text-align: center;
+}
+p {
+    margin: 3vh 3vw;
+    padding: auto;
+}
+li{
+    margin: 3vh 5vw;
+}
+.inicio:hover{
+    color: rgb(63, 187, 125);
+}
+h3{
+    color: #fff;
+}
+
+/*Redes sociales*/
+
+.block_redes_sociales:hover{
+    transform: scale(1.1);
+}
+
+.block_redes_sociales{
+    display: block;
+    margin: 3%;
+    padding: 0%;
+    text-align: center;
+    transition: 300ms;
+}
+.redes_sociales_columna{
+    display: flex;
+    margin:auto;
+    height: 30vh;
+    width: 100%;
+
+}
+
+
+/*Futuros viajes*/
+.block_proximos_viajes:hover{
+    transform: scale(1.1);
+}
+
+.proximos_viajes_columna{
+    display: flex;
+    margin-bottom: 1.75em;
+}
+.block_proximos_viajes{
+    display: block;
+    margin: 3%;
+    padding: 0%;
+    text-align: center;
+    transition: 300ms;
+}
+
+/*Viajes*/
+.block_viajes:hover{
+    transform: scale(1.1);
+
+}
+.block_viajes{
+    display: block;
+    margin: 3%;
+    padding: 0%;
+    text-align: center;
+    transition: 300ms;
+}
+
+.viajes_columna{
+    display: flex ;
+    margin-bottom: 1.75em;
+    
+}
+
+/*Camperización*/
+
+.camperizacion_columna{
+    display: flex;
+    margin-bottom: 1.75em;
+}
+.h3_camper{
+    text-align: center;
+}
+.block_camperizacion{
+    display: block;
+    margin: 3%;
+    padding: 0%;
+    text-align: center;
+}
+.img_camp{
+    transition: 300ms;
+}
+.img_camp:hover{
+    scale: 1.1;
+}
+/*Texto*/
+.camperizacion_inner_cont, .texto_registro, .contenido_texto_quiensoy{
+    color:#fff;
+}
+
+/*Navegador*/
+
+.nav_header{
+    background-color: rgb(63, 187, 125);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6 );   
+}
+.ul_items_header{
+    display: flex;
+    list-style: none;
+    margin: 10vw;
+    
+}
+.ul_items_header li {
+    border-radius: 15px;
+    margin: auto;
+}
+.ul_items_header li a {
+    padding: 13px 13px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+}
+.ul_items_header li:hover, li.active {
+    background-color: rgba(81, 155, 118, 0.336);
+    transition: 300ms;
+    scale: 1.1;
+}
+
+
+.header_bot_button_responsive{
+    margin-right: 30px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+ul.show{
+    top: 65px;
+}
+
+/*Cabecera*/
+.header_mid_logo{
+    height: 15vh;
+    width: 100%; 
+  
+}
+.header_top{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+/*Footer*/
+footer{
+    background-color:rgb(63, 187, 125);
+   
+}
+.contenedor_copyright p span{
+    display: block;
+    text-align: center;
+    
+}
+img{
+    object-fit: contain;
+    width:100%;
+    height:auto;
+}
+/*div Posts*/
+.imagen_post{
+    width: 8vw !important;
+    height: 8vh !important;
+    
+    
+
+}
+ .titulo_post{
+    color: black !important;
+}
+.contenedor_post{
+    display: flex;
+    background-color: rgba(81, 155, 118, 0.87);
+    border-radius: 10px;
+    transition: 300ms;
+    
+}
+.descripcion_corta{
+    color: #fff ;
+}
+.contenedor_post:hover{
+    transform: scale(1.1);
+}
+
+/**/
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #414141;
+}
+.header_mid_logo{
+    height: 15vh;
+    width: 100%; 
+  
+}
+.logo_footer{
+    height: 15vh;
+    width: 100%; 
+  
+}
+
+/*Iconos*/
+
+.fa-brands{
+    color: rgb(63, 187, 125);
+    font-size: 1.3em;
+    transition: 300ms;
+
+}
+header .fa-brands:hover{ 
+    scale: 1.4;
+}
+
+footer .fa-brands:hover{
+    scale: 1.4;
+}
+
+footer .fa-brands{
+    color: rgb(250, 250, 250);
+    font-size: 1.5em;
+   
+
+}
+.rrss_footer , .header_topbox_rrss{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+.footer_rrss, .header_top_rrss{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/*Divs espaciadores*/
+.espaciador_rrss_footer, .header_top_espaciador, .espaciador_form{
+    
+    width: 33%;
+}
+
+/*Iframes*/
+
+.cover_mapa{    
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    background-color: rgb(81, 155, 118); 
+     
+}
+/*Contenedores*/
+
+.quiensoy , .contenedor_camperizacion, .contenedor_registro{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 0%;
+    padding: 10px;
+    background-color: rgb(81, 155, 118);
+}
+footer{
+    background-color: rgb(81, 155, 118);
+}
+.quiensoy{
+    transition: 300ms;
+    
+}
+.quiensoy:hover{
+    scale: 1.1;
+}
+.video_quiensoy{
+    height: 30vh;
+    width: 30vw;
+}
+
+/*Formularios*/
+
+.separador{
+    height: 25px;
+}
+
+.form{
+    display: block;
+    text-align: center;
+    background-color: rgb(81, 155, 118);
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+}
+label{
+    border-radius: 5px;
+    
+    
+}
+.icono{
+    padding: auto;
+    color:white;
+}
+.icono:hover{
+    color:rgb(63, 187, 125) !important;
+    background-color:rgb(81, 155, 118) !important ;
+    
+}
+.boton{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/*Clase botones*/
+
+.boton{ 
+    box-sizing: border-box;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid rgb(63, 187, 125);
+    border-radius: 0.6em;
+    color: rgb(63, 187, 125);
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition:300ms ;
+}
+.boton:hover, .boton:focus {
+    color: #fff;
+    outline: 0;
+    box-shadow: 0 0 40px 40px rgb(63, 187, 125) inset;
+    scale: 1.1;
+}
+
+
+.sponsors{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 20vh;
+}

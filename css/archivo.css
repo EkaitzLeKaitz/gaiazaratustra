@@ -1,0 +1,676 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+/*General*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: #ffffff;
+    
+}
+
+.camperizacion_inner_cont{
+    color:#fff;
+}
+
+h1 ,h2{
+    color:rgb(63, 187, 125);
+    margin:3vh;
+}
+
+h2{
+    text-align: center;
+}
+
+p {
+    margin: 3vh 3vw;
+    padding: auto;
+}
+
+.inicio:hover{
+    color: rgb(63, 187, 125);
+}
+
+h3{
+    color: #fff;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #414141;
+}
+
+
+/*Contenedor Web*/
+
+div .contenedor_web{
+    margin-top: 50px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+/*HEADER*/
+.header_top{
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    padding: 1vh;    
+}
+.header_mid{
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    padding: 1vh;
+    margin: 2%;
+    
+}
+.logo_footer{
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    padding: 1vh;
+    margin: 0;
+    border-radius: 100% !important;
+}
+.logo{
+    border-radius: 100% !important;
+    width: 100%;
+    height: 100%;
+}
+/*FOOTER*/
+
+footer{
+    background-color: rgb(63, 187, 125);
+}
+.contenedor_copyright p span{
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;    
+}
+
+    /*RRSS*/
+
+    .fa-brands{
+        color: rgb(63, 187, 125);
+        font-size: 1.3em;
+        transition: 300ms;
+    }
+    .header .fa-brands:hover, footer .fa-brands:hover{ 
+        scale: 1.4;
+    }
+
+    .footer_rrss, .header_top_rrss{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    footer .fa-brands{
+        color: rgb(250, 250, 250);
+        font-size: 1.5em;
+    }
+
+    .rrss_footer{
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+/*NAVEGADOR*/
+
+.header_bot{
+    border: solid rgba(63, 187, 125, 0.815);
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6 );  
+    background-color: rgb(63, 187, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin: 0;
+}
+
+.header_bot .nav-links{
+    list-style: none;
+}
+
+.header_bot .nav-links li{
+    display: inline-block;
+    padding:2.4vw;
+    transition: 200ms;    
+}
+
+.header_bot .nav-links li:hover,
+/**/.overlay a:hover{
+    transform: scale(1.2);
+}
+
+.header_bot .nav-links a{
+    font-size: 700;
+    color: #ffffff; 
+    transition: 300ms;
+}
+.header_bot .nav ul li{
+
+    display: flexbox;
+    width: 20%;
+    transition: 300ms;
+
+}
+.header_bot .nav-links a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/**/.menu {
+    display:none;
+}
+
+.header_bot button,
+/**/.header_bot .menu button{
+    justify-content: end;
+    margin-left: 20px;
+    font-weight: 700;
+    color: rgb(63, 187, 125);
+    padding: 9px 25px;
+    background: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header_bot button:hover,
+/**/.header_bot .menu button:hover{
+    background-color: #ffffff;
+    color: rgba(63, 187, 125);
+    transform: scale(1.1);
+}
+
+
+/**/@media screen and (max-width: 889px){
+  
+    .nav-links {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+        justify-content:end !important;
+    }
+    .header_top, .header_mid{
+        display: none;
+    }
+    .video_quiensoy{ /*Cambio*/
+        margin: auto;
+        flex-basis: none;
+        height: 250px;
+        
+        
+    }
+    .contenido_texto_quiensoy{
+        align-items: center;
+        margin: auto;
+        flex-basis: none;
+        color: #fff;
+    }
+}
+
+
+
+/*Nav Mobile*/
+
+.header_bot a{
+    text-decoration: none;  
+    /*borramos el que teniamos en .header .nav-links a*/ 
+}
+
+.header_bot .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(63, 187, 125);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header_bot .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+.header_bot .overlay a{
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.header_bot .overlay a:hover, 
+.header_bot .overlay a:focus{
+    color: #ffffff;
+}
+
+.header_bot .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 50px;
+}
+
+@media screen and (max-height:450px) {
+    .header_bot .overlay a{
+        font-size: 14px;
+    }
+    .header_bot .overlay .close{
+        font-size: 20px;
+        top: 15px;
+        right: 35px;
+    }
+    .header_top, .header_mid{
+        display: none;
+    }
+}
+
+/*HR*/
+hr{
+    margin: 1vh;
+}
+/*IMAGENES*/
+
+img{
+    object-fit: contain;
+    width:100%;
+    height:100%;
+    
+}
+/*CONTENEDORES*/
+
+.contenido_quiensoy , .contenedor_camperizacion {
+    display: flex;
+    border-radius:20px;
+    padding: 20px;
+    background-color: rgb(81, 155, 118);
+    flex-wrap: wrap;
+}
+/*VENTANA*/
+.registro{
+    display: flex;
+    border-radius:20px;
+    margin: 10%;
+    padding: 5%;
+    background-color: rgb(81, 155, 118);
+    flex-wrap: wrap;
+}
+.registro p {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.titulo_registro{
+    text-align: center;
+    width: 100%;
+}
+.boton_registro{
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+.btn_consulta{
+    text-align: center;
+    width: 100%;
+    color: rgb(63, 187, 125) !important;
+}
+.boton_camperizacion{
+    
+    margin: 3% !important;
+}
+.registro_btn{
+    color: rgba(255, 255, 255, 0.801) !important;
+    text-align: center !important;
+}
+
+    /*QuienSoy*/
+    .video_quiensoy{
+        margin: auto;
+        flex-basis: calc(50% - 1em)!important;
+        height: 250px;
+        
+        
+    }
+    .contenido_texto_quiensoy{
+        align-items: center;
+        margin: auto;
+        flex-basis: calc(50% - 1em)!important;
+        color: #fff;
+    }
+    .contenido_texto_quiensoy h3{
+        margin: auto;
+        text-align: center;
+        padding-left: 30px;
+    }
+    /*FuturosViajes*/
+
+    .block_proximos_viajes:hover{
+        transform: scale(1.1);
+    }
+    
+    .proximos_viajes_columna{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1.75em;
+        flex-wrap: wrap;
+    }
+    .block_proximos_viajes{
+        display: block;
+        margin: 10px;
+        padding: 0;
+        align-items:  center;
+        transition: 300ms;
+        width: 230px;
+        height: 230px;
+    }
+ 
+    /*Fases Ruta*/
+
+    .fases_ruta{
+        display: flex;
+    }
+
+    .imagen_fases_ruta{
+        flex-basis: calc(50% - 1em)!important;
+        flex-wrap: wrap;
+    }
+
+
+    /*Camperización*/
+    .camperizacion_inner_cont h3{
+        text-align: center;
+    }
+    .imagen_camp{
+        width: 200px;
+        height: 200px;
+    }
+    .texto_camp{
+        text-align: center;
+    }
+    .fases_ruta_text{
+        text-align: center;
+
+    }
+    .camperizacion_columna{
+        display: flex;
+        margin-bottom: 1.75em;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .h3_camper{
+        text-align: center;
+    }
+
+    .block_camperizacion{
+        display: block;
+        margin: 10px;
+        padding: 0;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+    }
+
+    .img_camp{
+        transition: 300ms;
+    }
+
+    .img_camp:hover{
+        scale: 1.1;
+    }
+    
+    /*RRSS*/
+
+    .redes_sociales_columna{
+        display: flex;
+        margin-bottom: 1.75em;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .block_redes_sociales{
+        display: block;
+        margin: 10px;
+        padding: 5%;
+        text-align: center;
+        transition: 300ms;
+        width: 220px;
+        height: 220px;
+    }    
+    .block_redes_sociales:hover{
+        transform: scale(1.1);
+    }
+
+    /*Viajes*/
+
+    .block_viajes:hover{
+        transform: scale(1.1);
+        
+    }
+
+    .block_viajes{
+        display: block;
+        margin: 10px;
+        padding: 5%;
+        text-align: center;
+        transition: 300ms;
+        width: 220px;
+        height: 220px;
+    }
+    
+    .viajes_columna{
+        display: flex ;
+        margin-bottom: 1.75em;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+
+/*Iframes*/
+
+    .mapa_ruta, .mapa_clima{
+       object-fit: contain;
+       display: block;
+      
+    }
+    .cover_mapa {  
+        display: flex;
+        justify-content: center;  
+        height: 40vh;
+        width: 100%;
+        padding: 15px;
+        margin: 0px;
+        background-color: rgb(81, 155, 118); 
+        
+    }
+
+    .mapa_ruta{
+        width: 100%;
+        height: 100%;
+    }
+
+/*Clase botones*/
+
+.boton{ 
+    box-sizing: border-box;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid rgb(63, 187, 125);
+    border-radius: 0.6em;
+    color: rgb(63, 187, 125);
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center !important;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition:300ms ;
+}
+.boton:hover, .boton:focus {
+    color: #fff;
+    outline: 0;
+    box-shadow: 0 0 40px 40px rgb(63, 187, 125) inset;
+    scale: 1.1;
+}
+
+/*Sponsor*/
+.sponsors{
+    background-color: rgb(63, 187, 125);
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 200;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img_sponsor{
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+
+
+}
+.img_sponsor:hover{
+    transform: scale(1.1);
+
+}
+
+/*Post*/
+
+.imagen_post{
+    
+border-radius: 15px;
+margin:auto;
+padding: 5px;
+}
+#backend{
+    margin-top: 50px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 0px;
+}
+ .titulo_post{
+    color: black !important;
+    margin: auto;
+    padding: 10px;
+}
+.contenedor_post{
+    display: flex;
+    background-color: rgba(77, 77, 77, 0.384);
+    border-radius: 10px;
+    transition: 300ms;
+    margin: 5%;
+    
+}
+.descripcion_corta{
+    color: #fff ;
+}
+.contenedor_post:hover{
+    transform: scale(1.1);
+}
+/*Formulario*/
+.form{
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%; 
+}
+
+.form_title{
+    color:rgb(63, 187, 125);
+    text-align: center;
+}
+.form_input{
+    text-align: center;
+}
+
+.form_input--message{
+    resize: none;
+    padding-bottom: 3em;
+}
+
+textarea{
+    text-align: center;
+   
+}
+#icono{
+    color: rgb(63, 187, 125);
+    font-size: 1.8em;
+    transition: 300ms;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto; 
+   
+    
+}
+#icono:hover{
+    scale: 1.6;
+}
+
+.separador{
+    height: 5vh;
+}
+.th .td{
+	display: inline-block;
+	width: 40vw;
+	font-weight: bold;
+}
+
+table{
+    background-color:rgb(63, 187, 125) ;
+	border: 1px solid rgb(63, 187, 125);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+th{
+    background-color: rgb(63, 187, 125);
+    color: #fff;
+}
+td{
+    background-color: #fff;
+    color: #414141;
+}
+table {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
